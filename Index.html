@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Product Description Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Eco Product Description Generator</h1>
+        <p>Powered by EcoTech Labs</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" placeholder="e.g. EcoGuard Smart Sensor" />
+
+            <label for="tone">Select Tone</label>
+            <select id="tone">
+                <option value="professional">Professional</option>
+                <option value="friendly">Friendly</option>
+                <option value="luxury">Luxury</option>
+                <option value="simple">Simple</option>
+            </select>
+
+            <button onclick="generateDescription()">Generate</button>
+
+            <div id="output"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
